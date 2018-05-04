@@ -1,20 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.businessapp.fxgui.AppFXMLController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.businessapp.fxgui.AppFXMLController">
    <center>
       <TabPane fx:id="fxApp_TabsPane" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
         <tabs>
           <Tab id="Main" text="Main">
             <content>
-              <AnchorPane>
+              <AnchorPane prefHeight="243.0" prefWidth="275.0" style="-fx-background-color: blue;">
                      <children>
-                        <Button layoutX="25.0" layoutY="35.0" mnemonicParsing="false" onMouseReleased="#exitButton" prefHeight="25.0" prefWidth="76.0" text="Exit" />
+                        <Button layoutX="185.0" layoutY="204.0" mnemonicParsing="false" onMouseReleased="#exitButton" prefHeight="25.0" prefWidth="76.0" text="Exit" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+                        <Label layoutX="48.0" layoutY="20.0" text="Fahrradverleih" AnchorPane.topAnchor="20.0">
+                           <font>
+                              <Font name="Algerian" size="21.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="139.0" fitWidth="200.0" layoutX="38.0" layoutY="52.0">
+                           <image>
+                              <Image url="@images/Fahrrad.jpg" />
+                           </image>
+                        </ImageView>
                      </children></AnchorPane>
             </content>
           </Tab>
