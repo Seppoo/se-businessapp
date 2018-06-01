@@ -26,7 +26,7 @@ public interface CustomerDataIntf extends ControllerIntf {
 
 	public Collection<Customer> findAllCustomers();
 
-	public Customer newCustomer( String name );
+	public Customer newCustomer( String vorname , String name);
 
 	public void updateCustomer( Customer c );
 

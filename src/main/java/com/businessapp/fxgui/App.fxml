@@ -27,7 +27,7 @@
                         </Label>
                         <ImageView fitHeight="139.0" fitWidth="200.0" layoutX="38.0" layoutY="52.0">
                            <image>
-                              <Image url="@images/Fahrrad.jpg" />
+                              <Image url="file:/C:/Users/User/Documents/SE-2/se-businessapp/src/main/java/com/businessapp/fxgui/images/Fahrrad.jpg" />
                            </image>
                         </ImageView>
                      </children></AnchorPane>
