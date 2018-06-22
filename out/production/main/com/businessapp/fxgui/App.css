@@ -1,0 +1,29 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#X__FXID_EntityTable .table-cell, .label {
+    -fx-alignment: center;
+}
+
+#FXID_EntityTable .col-left > .table-cell {
+    -fx-alignment: center-left;
+}
+
+#FXID_EntityTable .col-center > .table-cell {
+    -fx-alignment: center;
+}
+
+#FXID_EntityTable .col-right > .table-cell {
+    -fx-alignment: center-right;
+}
+
+#FXID_EntityTable .column-header.col-left > .label {
+    -fx-alignment: center-left;
+}
+
+#FXID_EntityTable .column-header.col-center > .label {
+    -fx-alignment: center;
+}
+
+#FXID_EntityTable .column-header.col-right > .label {
+    -fx-alignment: center-right;
+}

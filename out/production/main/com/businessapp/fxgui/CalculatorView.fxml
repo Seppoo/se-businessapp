@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane fx:id="FXID_CalculatorView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@CalculatorView.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.businessapp.fxgui.CalculatorViewController">
+   <children>
+      <GridPane fx:id="keypadGridPane" hgap="4.0" layoutX="67.0" layoutY="106.0" prefHeight="239.0" prefWidth="194.0" vgap="4.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+
+            <Button maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-control" text="MwSt" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="0">
+			</Button>
+            <Button maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-control" text="CE" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="0">
+               </Button>
+            <Button maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-control" text="C" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="0">
+               </Button>
+            <Button maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-control" text="&lt;-" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="0">
+               </Button>
+
+            <Button maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-MRC" text="M+" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="1">
+               </Button>
+            <Button maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-MRC" text="MR" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               </Button>
+            <Button maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-MRC" text="MC" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               </Button>
+            <Button maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-operator" text="/" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               </Button>
+
+            <Button maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-number" text="7" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="2">
+               </Button>
+            <Button maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-number" text="8" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               </Button>
+            <Button maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-number" text="9" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               </Button>
+            <Button maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-operator" text="*" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               </Button>
+
+            <Button maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-number" text="4" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="3">
+               </Button>
+            <Button maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-number" text="5" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               </Button>
+            <Button maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-number" text="6" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               </Button>
+            <Button maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-operator" text="-" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               </Button>
+
+            <Button maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-number" text="1" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="4">
+               </Button>
+            <Button maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-number" text="2" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               </Button>
+            <Button maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-number" text="3" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               </Button>
+            <Button maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-operator" text="+" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               </Button>
+
+            <Button id="KEY_0" fx:id="key" maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-number" text="0" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="5">
+               </Button>
+            <Button id="KEY_1000" fx:id="key" maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-number, calculator-button-number-1000" text="1000" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               </Button>
+            <Button id="KEY_COMMA" fx:id="key" maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-operator" text="," textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5">
+            	</Button>
+            <Button id="KEY_EQUALS" fx:id="key" maxHeight="1000.0" maxWidth="1000.0" onMousePressed="#keyPadPressed" styleClass="calculator-button, calculator-button-operator" text="=" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               </Button>
+
+         </children>
+      </GridPane>
+      <TextField id="calculator-displayfield" fx:id="displayTextField" layoutX="67.0" layoutY="49.0" prefHeight="51.0" prefWidth="194.0" text="1,000">
+      </TextField>
+      <TextArea id="calculator-sidearea" fx:id="sideTextArea" layoutX="331.0" layoutY="106.0" prefHeight="239.0" prefWidth="200.0" text="Hello World" wrapText="true" />
+   </children>
+</AnchorPane>

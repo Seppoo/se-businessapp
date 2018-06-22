@@ -1,0 +1,84 @@
+/*
+ * *******************************************************************
+ * Styles for main number panel and history panel.
+ */
+#calculator-displayfield, #calculator-sidearea .content {
+	-fx-background-color: #F0F3DC;
+}
+
+#calculator-displayfield, #calculator-sidearea {
+	-fx-border-color: #A0A0A0;
+	-fx-border-radius: 6px;
+}
+
+#calculator-displayfield {
+	-fx-border-width: 2px;
+	-fx-font-size: 20px;
+	-fx-alignment: center-right;
+	-fx-padding: 0px 6px 0px 6px;		/* top, right, bottom, left */
+}
+
+#calculator-displayfield {
+	-fx-font-size: 20px;
+}
+
+#calculator-sidearea {
+	-fx-border-width: 1px;
+	-fx-font-size: 16px;
+}
+
+#calculator-sidearea *.text {
+    -fx-text-alignment: right;
+}
+
+
+/*
+ * *******************************************************************
+ * Styles for key buttons ( numbers: [0-9,1000,Komma], operators: [=,+,-,*,/,M+,MR,MC], controls: [C,CE,Hist,<-] ).
+ */
+.calculator-button {
+	-fx-background-radius: 2px;
+	-fx-padding: 0 0 0 0;
+}
+.calculator-button-control, .calculator-button-MRC {
+	-fx-font-size: 12px;
+}
+.calculator-button-number, .calculator-button-operator {
+	-fx-font-size: 20px;
+}
+.calculator-button-number-1000 {
+	-fx-font-size: 16px;
+}
+/*
+.calculator-button-operator {
+	-fx-text-fill: blue;
+	-fx-font-weight: bold;
+}
+*/
+
+
+/*
+	-fx-font-size: 30px;
+	-fx-font-style: italic;
+	-fx-font-weight: bold;
+	-fx-font-family: fantasy;
+	-fx-text-fill: blue;
+	-fx-background-color: aqua; #C0C3AB; #C8CBB4; #E8EBD4; #F0F3DC;
+
+.text-input.error {
+    -fx-focus-color: #d35244;
+    -fx-faint-focus-color: #d3524422;
+
+    -fx-highlight-fill: -fx-accent;
+    -fx-highlight-text-fill: white;
+    -fx-background-color:
+        -fx-focus-color,
+        -fx-control-inner-background,
+        -fx-faint-focus-color,
+        linear-gradient(from 0px 0px to 0px 5px, derive(-fx-control-inner-background, -9%), -fx-control-inner-background);
+    -fx-background-insets: -0.2, 1, -1.4, 3;
+    -fx-background-radius: 3, 2, 4, 0;
+    -fx-prompt-text-fill: transparent;
+}
+
+ */
