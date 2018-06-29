@@ -1,0 +1,33 @@
+{
+  "id" : "Kunden",
+  "genericType" : "com.businessapp.pojos.Customer",
+  "entities" : [ {
+    "id" : "C.DP2CQO",
+    "name" : "Test",
+    "vorname" : "Testi",
+    "contacts" : [ "Test.Testi@mailinator.com" ],
+    "notes" : [ "2018-06-27 18:01:39.504, Customer record created." ],
+    "status" : "ACTIVE"
+  }, {
+    "id" : "C.GEMJAQ",
+    "name" : "Meyer",
+    "vorname" : "Anna",
+    "contacts" : [ "Blumenstr 17, 14568 Potsdam", "email: ame886@gmail.com" ],
+    "notes" : [ "2018-05-22 16:09:06.038, Customer record created.", "2018-05-22 16:12:32.133, Erstes Einloggen.", "2018-05-24 16:12:32.133, Erstes Transaktion." ],
+    "status" : "ACTIVE"
+  }, {
+    "id" : "C.2KTAAA",
+    "name" : "Frau Prof. Boese",
+    "vorname" : "Jenny",
+    "contacts" : [ "email: boese@beuth-hochschule.de" ],
+    "notes" : [ "2018-05-24 14:12:04.289, Customer record created.", "2018-05-24 14:14:04.289, Versuch Kunde zu aktivieren.", "2018-05-24 14:19:04.422, Fehler wegen ungueltigem Wohnort.", "2018-05-24 14:24:09.289, Kunde suspendiert." ],
+    "status" : "SUSPENDED"
+  }, {
+    "id" : "C.FX9A16",
+    "name" : "Dr Jackson",
+    "vorname" : "Konstantin",
+    "contacts" : [ "JSON-Allee 8, 10472 Berlin", "email: drjack843@gmx.de" ],
+    "notes" : [ "2018-05-25 08:32:06.868, Customer record created." ],
+    "status" : "ACTIVE"
+  } ]
+}

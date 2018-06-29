@@ -27,21 +27,21 @@ public class App extends Application {
 	public static final String FXML_PATH	= "fxgui/";
 	private static App _app = null;
 
-	PersistenceProviderIntf persistenceProvider
-			= PersistenceProviderFactory.getPersistenceProvider( "JavaSerialization" );
+	PersistenceProviderIntf persistenceProvider = PersistenceProviderFactory.getPersistenceProvider("Kunden.json");
 
 	/*
 	 * List of App components in order of appearance on the main GUI/TabPanel.
 	 */
 	private ComponentBuilder compBuilder = new ComponentBuilder(
 			Arrays.asList( new Component[] {
-					//		Name,			FXML UI-Controller,	Logic-Controller
-					new Component(	"Main",			"App.fxml",		null ),
-					new Component(	"Calculator",           "Calculator.fxml",	CalculatorLogicIntf.getController() ),
-					new Component(	"Kunden",		"Customer.fxml",	CustomerDataSource.getController("Kunden", persistenceProvider) ),
-					new Component(	"Kundenliste_2",        "Customer.fxml",	CustomerDataSource.getController("Kundenliste_2", persistenceProvider) ),
-					new Component(	"Studenten",            "Customer.fxml",        CustomerDataIntf.getController() ),
-					new Component( "Katalog",		"Item.fxml",		ItemDataSource.getController("Katalog", persistenceProvider) ),
+					//				Name,			FXML UI-Controller,		Logic-Controller
+					new Component(	"Main",			"App.fxml",				null ),
+					new Component(	"Calculator",	"Calculator.fxml",		CalculatorLogicIntf.getController() ),
+					//new Component( "Calc_2",		"Calculator.fxml",		CalculatorLogicIntf.getController() ),
+					new Component(	"Kunden",		"Customer.fxml",		CustomerDataSource.getController("Kunden", persistenceProvider) ),
+					new Component(	"Kundenliste_2","Customer.fxml",		CustomerDataSource.getController("Kundenliste_2", persistenceProvider) ),
+					new Component(	"Studenten","Customer.fxml",		CustomerDataIntf.getController() ),
+			new Component( "Artikel","Article.fxml",			ItemDataSource.getController("Item", persistenceProvider) ),
 			}));
 
 	public static App getInstance() {

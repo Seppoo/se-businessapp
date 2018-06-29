@@ -44,7 +44,7 @@ class CustomerDataMockImpl implements CustomerDataIntf {
     public void start() {
 
         String name = parent.getName();
-        if (name.equals("Kunden")) {
+        if (name.equals("Kunden.json")) {
             // Customer list 1
             Customer eric = DS.newCustomer("Eric", "Winter").addContact("eric@gmail.com");
             Customer anja = DS.newCustomer("Anja", "Schuhmann");

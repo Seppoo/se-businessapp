@@ -29,7 +29,7 @@ public class PersistenceProviderFactory {
 
 			} else {
 				if( selector.toLowerCase().matches( "(.*)json(.*)" ) ) {
-// JSON					_provider = JSONPersistenceProvider.getProvider();
+ 					_provider = JSONPersistenceProvider.getProvider();
 
 				} else {
 					if( selector.toLowerCase().matches( "(.*)jdbc(.*)" ) ) {
